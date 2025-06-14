@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react';
-
  const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -49,7 +48,7 @@ const handleSendMessage = (e) => {
     const lowerCaseMessage = userMessageText.toLowerCase();
     let botResponse = `I'm not sure how to respond to "${userMessageText}". Can you please rephrase or ask about rooms, broker fees, or contact info?`; // Default fallback
 
-    if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi')) {
+    if (lowerCaseMessage.includes('hello') || lowerCaseMessage.includes('hi') || lowerCaseMessage.includes('namaste')) {
       botResponse = "Hi there! How can I assist you with finding a room in Kathmandu?";
     } else if (lowerCaseMessage.includes('room') || (lowerCaseMessage.includes('find') || lowerCaseMessage.includes('search') || lowerCaseMessage.includes('rent'))) {
       botResponse = "Great! Are you looking for a **single room**, **shared room**, **apartment**, or **hostel**? You can also search by area or college.";
@@ -80,7 +79,6 @@ const handleSendMessage = (e) => {
     } else if (lowerCaseMessage.includes('price') || lowerCaseMessage.includes('budget')) {
       botResponse = "Prices vary depending on the room type, location, and amenities. What's your approximate budget range, and which area are you considering?";
     }
-
     return botResponse;
   };
 

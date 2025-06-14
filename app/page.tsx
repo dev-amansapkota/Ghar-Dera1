@@ -53,21 +53,26 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 px-4">
-          <div className="container mx-auto text-center">
+        <section className=" mx-0 w-full h-screen">
+          <img src="../2.webp" alt="" className="absolute w-full h-full object-cover z-0" />
+          <div className="container flex flex-col justify-center items-center h-full mx-auto text-center">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-4xl relative md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Find Your Perfect Room in{" "}
-                <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                <span className="relative bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Kathmandu
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto relative">
                 Direct connection between students and landlords. No broker fees, no hidden costs. Find affordable,
                 safe, and comfortable accommodation near your college with our advanced platform.
               </p>
-
-              {/* Enhanced Search Bar */}
+            </div>
+          </div>
+        </section>
+        {/* semi section */}
+        <section  className="m-0 py-20 bg-gray-50 ">
+{/* Enhanced Search Bar */}
               <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6 mb-12">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
                   <div className="md:col-span-2">
@@ -114,8 +119,6 @@ export default function Home() {
                   <div className="text-gray-600 font-medium">Support</div>
                 </div>
               </div>
-            </div>
-          </div>
         </section>
         {/* Featured Listings */}
         <section className="py-20">
