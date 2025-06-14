@@ -1,5 +1,6 @@
 "use client"
 
+import React from "react"
 import { useEffect, useState } from "react"
 import { Search, MapPin, Users, Shield, Phone, Mail, TrendingUp, Clock, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -68,7 +69,7 @@ export default function Home() {
         </span>
       </h1>
       <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-        Direct connection between students and landlords. No broker fees, no hidden costs. Find affordable,
+        Direct connection between tenants and landlords. No broker fees, no hidden costs. Find affordable,
         safe, and comfortable accommodation near your college with our advanced platform.
       </p>
     </div>
@@ -114,7 +115,7 @@ export default function Home() {
                 </div>
                 <div className="text-center p-6 bg-white/50 rounded-xl backdrop-blur-sm">
                   <div className="text-4xl font-bold text-green-600 mb-2">2000+</div>
-                  <div className="text-gray-600 font-medium">Happy Students</div>
+                  <div className="text-gray-600 font-medium">Happy Tenants</div>
                 </div>
                 <div className="text-center p-6 bg-white/50 rounded-xl backdrop-blur-sm">
                   <div className="text-4xl font-bold text-purple-600 mb-2">2.5%</div>
@@ -131,7 +132,7 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Properties</h2>
-              <p className="text-xl text-gray-600">Handpicked accommodations perfect for students</p>
+              <p className="text-xl text-gray-600">Handpicked accommodations perfect for tenants</p>
             </div>
 
             {loading ? (
@@ -170,7 +171,7 @@ export default function Home() {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose GharDera?</h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                We understand the challenges students face when moving to Kathmandu. Our platform is designed
+                We understand the challenges tenants face when moving to Kathmandu. Our platform is designed
                 specifically for your needs with cutting-edge features.
               </p>
             </div>
@@ -324,7 +325,7 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Find Your Perfect Room?</h2>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-              Join thousands of students who have found their ideal accommodation through our platform. Start your
+              Join thousands of Tenants who have found their ideal accommodation through our platform. Start your
               journey today!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -348,7 +349,7 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-16">
+      <footer id="contact" className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -360,7 +361,7 @@ export default function Home() {
                 <span className="text-xl font-bold">GharDera</span>
               </div>
               <p className="text-gray-400 leading-relaxed mb-6">
-                Connecting students with affordable accommodation in Kathmandu. No broker fees, direct contact, secure
+                Connecting Tenants with affordable accommodation in Kathmandu. No broker fees, direct contact, secure
                 platform.
               </p>
               <div className="flex space-x-4">

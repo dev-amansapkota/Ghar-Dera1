@@ -26,13 +26,14 @@ export function Header() {
             Browse Properties
           </Link>
           <Link
-            href="/about"
-            className={`text-sm ${pathname === "/about" ? "text-primary font-medium" : "text-gray-600 hover:text-primary"}`}
+            href="/aboutus"
+            className={`text-sm ${pathname === "/aboutus" ? "text-primary font-medium" : "text-gray-600 hover:text-primary"}`}
           >
             About Us
           </Link>
           <Link
-            href="/contact"
+          
+            href="#contact"
             className={`text-sm ${pathname === "/contact" ? "text-primary font-medium" : "text-gray-600 hover:text-primary"}`}
           >
             Contact

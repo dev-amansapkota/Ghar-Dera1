@@ -12,9 +12,10 @@ const NavBar = () => {
         <a href="#" className="hover:text-black">
           Browse Properties
         </a>
-        <a href="#" className="hover:text-black">
-          About Us
-        </a>
+        <Button className="h-14 text-lg" onClick={handleSearch}>
+        <Search className="w-5 h-5 mr-2" />Search Rooms
+                            
+        </Button>
         <a href="#" className="hover:text-black">
           Contact
         </a>
