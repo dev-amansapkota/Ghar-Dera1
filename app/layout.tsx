@@ -8,7 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Student Housing Nepal - Find Your Perfect Room",
+  title: "GharDera - Affordable Student Housing in Nepal",
   description: "Connect directly with landlords. No broker fees. Find affordable student accommodation in Kathmandu.",
     generator: 'v0.dev'
 }

@@ -110,7 +110,7 @@ export default function PropertyDetailPage() {
       })
 
       // Filter out current property and limit to 3
-      const filtered = response.documents.filter((p: Property) => p.$id !== currentProperty.$id).slice(0, 3)
+      const filtered = response.documents.filter((p) => p.$id !== currentProperty.$id).slice(0, 3)
 
       setSimilarProperties(filtered as Property[])
     } catch (error) {
@@ -225,7 +225,7 @@ export default function PropertyDetailPage() {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: property?.title || "Student Housing Nepal",
+          title: property?.title || "GharDera",
           text: `Check out this property: ${property?.title}`,
           url: window.location.href,
         })

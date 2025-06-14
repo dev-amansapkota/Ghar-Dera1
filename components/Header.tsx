@@ -14,7 +14,8 @@ export function Header() {
     <header className="border-b bg-white">
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <Link href="/" className="font-bold text-xl text-primary">
-          Student Housing Nepal
+      <img className="h-12 w-16 m-0 p-0" src="./placeholder-logo.svg" alt="" />
+          
         </Link>
 
         <nav className="hidden md:flex items-center space-x-6">

@@ -12,7 +12,7 @@ import Link from "next/link"
 import { Header } from "@/components/Header"
 import { DatabaseSetupBanner } from "@/components/DatabaseSetupBanner"
 import { DemoModeBanner } from "@/components/DemoModeBanner"
-
+import ChatBot from "@/components/ui/chatbot"
 export default function Home() {
   const { user } = useAuth()
   const [featuredProperties, setFeaturedProperties] = useState<Property[]>([])
@@ -47,6 +47,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <ChatBot/>
       <DatabaseSetupBanner />
       <DemoModeBanner />
       <Header />
@@ -116,12 +117,49 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* Featured Listings */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Properties</h2>
+              <p className="text-xl text-gray-600">Handpicked accommodations perfect for students</p>
+            </div>
+
+            {loading ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="animate-pulse">
+                    <div className="bg-gray-200 h-48 rounded-lg mb-4"></div>
+                    <div className="space-y-2">
+                      <div className="bg-gray-200 h-4 rounded w-3/4"></div>
+                      <div className="bg-gray-200 h-4 rounded w-1/2"></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {featuredProperties.map((property) => (
+                  <PropertyCard key={property.$id} property={property} />
+                ))}
+              </div>
+            )}
+
+            <div className="text-center mt-12">
+              <Link href="/properties">
+                <Button size="lg" className="px-8">
+                  View All Properties
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* Enhanced Features Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Student Housing Nepal?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose GharDera?</h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 We understand the challenges students face when moving to Kathmandu. Our platform is designed
                 specifically for your needs with cutting-edge features.
@@ -222,44 +260,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Listings */}
-        <section className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Properties</h2>
-              <p className="text-xl text-gray-600">Handpicked accommodations perfect for students</p>
-            </div>
-
-            {loading ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {[...Array(6)].map((_, i) => (
-                  <div key={i} className="animate-pulse">
-                    <div className="bg-gray-200 h-48 rounded-lg mb-4"></div>
-                    <div className="space-y-2">
-                      <div className="bg-gray-200 h-4 rounded w-3/4"></div>
-                      <div className="bg-gray-200 h-4 rounded w-1/2"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {featuredProperties.map((property) => (
-                  <PropertyCard key={property.$id} property={property} />
-                ))}
-              </div>
-            )}
-
-            <div className="text-center mt-12">
-              <Link href="/properties">
-                <Button size="lg" className="px-8">
-                  View All Properties
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
-
+        
         {/* How It Works */}
         <section className="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
           <div className="container mx-auto px-4">
@@ -320,7 +321,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/properties">
-                <Button size="lg" variant="secondary" className="px-8">
+                <Button size="lg" variant="secondary" className="px-8 hover:bg-white hover:text-blue-600">
                   Browse Rooms Now
                 </Button>
               </Link>
@@ -328,7 +329,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-blue-600 px-8"
+                  className="text-black border-white hover:bg-white hover:text-blue-600 px-8"
                 >
                   List Your Property
                 </Button>
@@ -344,10 +345,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">SH</span>
+                <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
+      <img className="h-12 w-16 m-0 p-0" src="./placeholder-logo.svg" alt="" />
+                  <span className="text-white font-bold text-lg"></span>
                 </div>
-                <span className="text-xl font-bold">Student Housing Nepal</span>
+                <span className="text-xl font-bold">GharDera</span>
               </div>
               <p className="text-gray-400 leading-relaxed mb-6">
                 Connecting students with affordable accommodation in Kathmandu. No broker fees, direct contact, secure
@@ -448,7 +450,7 @@ export default function Home() {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Student Housing Nepal. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p>&copy; 2026 GharDera. All rights reserved. | Privacy Policy | Terms of Service</p>
           </div>
         </div>
       </footer>

@@ -67,7 +67,7 @@ export default function LoginPage() {
             <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
               <span className="text-white font-bold text-xl">SH</span>
             </div>
-            <span className="text-2xl font-bold text-gray-900">Student Housing Nepal</span>
+            <span className="text-2xl font-bold text-gray-900">GharDera</span>
           </Link>
         </div>
 

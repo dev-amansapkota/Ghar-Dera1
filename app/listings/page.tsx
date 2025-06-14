@@ -117,7 +117,7 @@ export default function ListingsPage() {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">SH</span>
             </div>
-            <span className="text-xl font-bold text-gray-900">Student Housing Nepal</span>
+            <span className="text-xl font-bold text-gray-900">GharDera</span>
           </Link>
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="/listings" className="text-blue-600 font-medium">
@@ -140,11 +140,13 @@ export default function ListingsPage() {
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1">
-              <Input
-                placeholder="Search by area, college, or landmark..."
-                className="h-12"
-                icon={<Search className="w-5 h-5" />}
-              />
+              <div className="relative">
+                <Input
+                  placeholder="Search by area, college, or landmark..."
+                  className="h-12 pl-10"
+                />
+                <Search className="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+              </div>
             </div>
             <div className="flex gap-2">
               <Button variant="outline" onClick={() => setShowFilters(!showFilters)} className="h-12">

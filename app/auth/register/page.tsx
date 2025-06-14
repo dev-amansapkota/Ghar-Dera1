@@ -56,8 +56,8 @@ export default function RegisterPage() {
       toast({
         title: "Account created successfully!",
         description: isDemoMode
-          ? "Welcome to the demo version of Student Housing Nepal!"
-          : "Welcome to Student Housing Nepal. You can now start exploring properties.",
+          ? "Welcome to the demo version of GharDera!"
+          : "Welcome to GharDera. You can now start exploring properties.",
       })
       router.push("/dashboard")
     } catch (error: any) {
@@ -105,7 +105,7 @@ export default function RegisterPage() {
             <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
               <span className="text-white font-bold text-xl">SH</span>
             </div>
-            <span className="text-2xl font-bold text-gray-900">Student Housing Nepal</span>
+            <span className="text-2xl font-bold text-gray-900">GharDera</span>
           </Link>
         </div>
 

@@ -73,7 +73,7 @@ export function NotificationSystem() {
       {
         id: "4",
         type: "system",
-        title: "Welcome to Student Housing Nepal",
+        title: "Welcome to GharDera",
         message: "Complete your profile to get better property recommendations.",
         timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), // 2 days ago
         read: true,
