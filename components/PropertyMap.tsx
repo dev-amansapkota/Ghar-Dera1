@@ -26,11 +26,12 @@ export function PropertyMap({ location, coordinates, title, className = "" }: Pr
           <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-2" />
           <h3 className="font-semibold text-gray-900">{title}</h3>
           <p className="text-sm text-gray-600">{location}</p>
-          {coordinates && (
-            <p className="text-xs text-gray-500 mt-1">
-              {coordinates.lat.toFixed(4)}, {coordinates.lng.toFixed(4)}
-            </p>
-          )}
+          {coordinates?.lat != null && coordinates?.lng != null && (
+  <p className="text-xs text-gray-500 mt-1">
+    {coordinates.lat.toFixed(4)}, {coordinates.lng.toFixed(4)}
+  </p>
+)}
+
         </div>
       </div>
 

@@ -437,7 +437,7 @@ async function populateData(databases: any, ID: any) {
   // Add demo users
   const demoUsers = [
     {
-      name: "Demo Student",
+      name: "Demo Tenant",
       email: "student@demo.com",
       userType: "student",
       verified: true,

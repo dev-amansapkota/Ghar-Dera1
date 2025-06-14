@@ -21,10 +21,10 @@ export default function ListingDetailPage() {
     rating: 4.8,
     reviews: 24,
     images: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "{MOCK_PROPERTIES.image}height=400&width=600",
+      "{MOCK_PROPERTIES.image}height=400&width=600",
+      "{MOCK_PROPERTIES.image}height=400&width=600",
+      "{MOCK_PROPERTIES.image}height=400&width=600",
     ],
     amenities: [
       { name: "WiFi", icon: <Wifi className="w-4 h-4" /> },

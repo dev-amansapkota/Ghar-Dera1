@@ -53,23 +53,29 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className=" mx-0 w-full h-screen">
-          <img src="../2.webp" alt="" className="absolute w-full h-full object-cover z-0" />
-          <div className="container flex flex-col justify-center items-center h-full mx-auto text-center">
-            <div className="max-w-4xl mx-auto">
-              <h1 className="text-4xl relative md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Find Your Perfect Room in{" "}
-                <span className="relative bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Kathmandu
-                </span>
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto relative">
-                Direct connection between students and landlords. No broker fees, no hidden costs. Find affordable,
-                safe, and comfortable accommodation near your college with our advanced platform.
-              </p>
-            </div>
-          </div>
-        </section>
+<section className="relative w-full h-screen overflow-hidden">
+  <img src="../2.webp" alt="" className="absolute w-full h-full object-cover z-0" />
+
+  {/* Glassy dark radial overlay */}
+  <div className="absolute inset-0 z-10 backdrop-blur-sm bg-black/50 bg-[radial-gradient(ellipse_at_center,_rgba(0,0,0,0.6)_0%,_rgba(0,0,0,0.9)_100%)]"></div>
+
+  <div className="container relative z-20 flex flex-col justify-center items-center h-full mx-auto text-center">
+    <div className="max-w-4xl mx-auto">
+      <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+        Find Your Perfect Room in{" "}
+        <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          Kathmandu
+        </span>
+      </h1>
+      <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+        Direct connection between students and landlords. No broker fees, no hidden costs. Find affordable,
+        safe, and comfortable accommodation near your college with our advanced platform.
+      </p>
+    </div>
+  </div>
+</section>
+
+
         {/* semi section */}
         <section  className="m-0 py-20 bg-gray-50 ">
 {/* Enhanced Search Bar */}

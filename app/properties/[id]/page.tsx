@@ -367,7 +367,7 @@ export default function PropertyDetailPage() {
             <Card className="overflow-hidden">
               <div className="relative">
                 <img
-                  src={property.images[currentImage] || "/placeholder.svg?height=400&width=600"}
+                  src={property.images[currentImage] || "{MOCK_PROPERTIES.image}height=400&width=600"}
                   alt={property.title}
                   className="w-full h-96 object-cover cursor-pointer"
                   onClick={() => setShowImageGallery(true)}
@@ -541,20 +541,21 @@ export default function PropertyDetailPage() {
                           </ul>
                         </div>
 
-                        <div>
-                          <h4 className="font-semibold mb-2 flex items-center">
-                            <MapPin className="w-4 h-4 mr-2 text-blue-600" />
-                            Nearby Places
-                          </h4>
-                          <ul className="space-y-2 text-sm text-gray-600">
-                            {property.nearbyPlaces.map((place, index) => (
-                              <li key={index} className="flex justify-between">
-                                <span>{place.name}</span>
-                                <span className="text-blue-600 font-medium">{place.distance}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+<div>
+  <h4 className="font-semibold mb-2 flex items-center">
+    <MapPin className="w-4 h-4 mr-2 text-blue-600" />
+    Nearby Places
+  </h4>
+  <ul className="space-y-2 text-sm text-gray-600">
+    {(Array.isArray(property.nearbyPlaces) ? property.nearbyPlaces : []).map((place, index) => (
+      <li key={index} className="flex justify-between">
+        <span>{place.name}</span>
+        <span className="text-blue-600 font-medium">{place.distance}</span>
+      </li>
+    ))}
+  </ul>
+</div>
+
                       </div>
                     </div>
                   </TabsContent>
@@ -597,16 +598,20 @@ export default function PropertyDetailPage() {
 
                       <div>
                         <h4 className="font-medium mb-2">Nearby Facilities</h4>
-                        <div className="grid grid-cols-2 gap-2">
-                          {property.nearbyPlaces.map((place, index) => (
-                            <div key={index} className="flex items-center justify-between p-2 bg-gray-50 rounded">
-                              <span className="text-sm">{place.name}</span>
-                              <Badge variant="secondary" className="text-xs">
-                                {place.distance}
-                              </Badge>
-                            </div>
-                          ))}
-                        </div>
+                        <div>
+  <h4 className="font-semibold mb-2 flex items-center">
+    <MapPin className="w-4 h-4 mr-2 text-blue-600" />
+    Nearby Places
+  </h4>
+  <ul className="space-y-2 text-sm text-gray-600">
+    {(Array.isArray(property.nearbyPlaces) ? property.nearbyPlaces : []).map((place, index) => (
+      <li key={index} className="flex justify-between">
+        <span>{place.name}</span>
+        <span className="text-blue-600 font-medium">{place.distance}</span>
+      </li>
+    ))}
+  </ul>
+</div>
                       </div>
                     </div>
                   </TabsContent>
@@ -691,7 +696,7 @@ export default function PropertyDetailPage() {
                         <div className="border rounded-lg overflow-hidden transition-all group-hover:shadow-md">
                           <div className="relative h-36">
                             <img
-                              src={similarProperty.images[0] || "/placeholder.svg?height=200&width=300"}
+                              src={similarProperty.images[0] || "{MOCK_PROPERTIES.image}height=200&width=300"}
                               alt={similarProperty.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             />

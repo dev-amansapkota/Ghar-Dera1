@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Slider } from "@/components/ui/slider"
 import Link from "next/link"
-
+import { MOCK_PROPERTIES } from "@/lib/mock-data"
 export default function ListingsPage() {
   const [priceRange, setPriceRange] = useState([5000, 20000])
   const [showFilters, setShowFilters] = useState(false)
@@ -22,7 +22,7 @@ export default function ListingsPage() {
       location: "Baneshwor, Kathmandu",
       rating: 4.8,
       reviews: 24,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "{MOCK_PROPERTIES.image}?height=200&width=300",
       amenities: ["WiFi", "Attached Bath", "24/7 Water", "Study Table"],
       type: "Single Room",
       available: true,
@@ -36,7 +36,7 @@ export default function ListingsPage() {
       location: "Kirtipur, Kathmandu",
       rating: 4.6,
       reviews: 18,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "{MOCK_PROPERTIES.image}?height=200&width=300",
       amenities: ["WiFi", "Common Kitchen", "Wardrobe", "Study Area"],
       type: "Shared Room",
       available: true,
@@ -50,7 +50,7 @@ export default function ListingsPage() {
       location: "New Baneshwor, Kathmandu",
       rating: 4.9,
       reviews: 31,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "",
       amenities: ["Furnished", "Balcony", "Parking", "WiFi"],
       type: "Apartment",
       available: true,
@@ -64,7 +64,7 @@ export default function ListingsPage() {
       location: "Koteshwor, Kathmandu",
       rating: 4.4,
       reviews: 12,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "{MOCK_PROPERTIES.image}height=200&width=300",
       amenities: ["WiFi", "Common Bath", "24/7 Water"],
       type: "Single Room",
       available: true,
@@ -78,7 +78,7 @@ export default function ListingsPage() {
       location: "Pulchowk, Lalitpur",
       rating: 4.2,
       reviews: 45,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "{MOCK_PROPERTIES.image}height=200&width=300",
       amenities: ["Common Kitchen", "Study Hall", "WiFi", "Laundry"],
       type: "Hostel",
       available: true,
@@ -92,7 +92,7 @@ export default function ListingsPage() {
       location: "Dillibazar, Kathmandu",
       rating: 4.7,
       reviews: 19,
-      image: "/placeholder.svg?height=200&width=300",
+      image: "{MOCK_PROPERTIES.image}height=200&width=300",
       amenities: ["AC", "Attached Bath", "WiFi", "Furnished"],
       type: "Single Room",
       available: false,
@@ -115,7 +115,7 @@ export default function ListingsPage() {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">SH</span>
+              <span className="text-white font-bold text-sm"><img className="h-12 w-16 m-0 p-0" src="./placeholder-logo.svg" alt="" /></span>
             </div>
             <span className="text-xl font-bold text-gray-900">GharDera</span>
           </Link>

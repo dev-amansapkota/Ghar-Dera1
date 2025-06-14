@@ -68,7 +68,7 @@ export function PropertyCard({ property, onFavoriteToggle, isFavorite = false, f
       <Link href={`/properties/${property.$id}`}>
         <div className="relative">
           <img
-            src={property.images[0] || "/placeholder.svg?height=200&width=300"}
+            src={property.images[0] || "{MOCK_PROPERTIES.image}height=200&width=300"}
             alt={property.title}
             className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
           />

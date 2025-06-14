@@ -65,7 +65,7 @@ export default function LoginPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center space-x-2">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-xl">SH</span>
+              <span className="text-white font-bold text-xl"><img className="h-12 w-16 m-0 p-0" src="./placeholder-logo.svg" alt="" /></span>
             </div>
             <span className="text-2xl font-bold text-gray-900">GharDera</span>
           </Link>
@@ -147,7 +147,7 @@ export default function LoginPage() {
 
               <div className="grid grid-cols-2 gap-3">
                 <Button type="button" variant="outline" onClick={() => handleDemoLogin("student")} disabled={loading}>
-                  Demo Student
+                  Demo Tenant
                 </Button>
                 <Button type="button" variant="outline" onClick={() => handleDemoLogin("landlord")} disabled={loading}>
                   Demo Landlord

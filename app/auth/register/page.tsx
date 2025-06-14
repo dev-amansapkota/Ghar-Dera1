@@ -78,7 +78,7 @@ export default function RegisterPage() {
   const fillDemoData = (userType: "student" | "landlord") => {
     const demoData = {
       student: {
-        name: "Demo Student",
+        name: "Demo Tenant",
         email: "demo.student@example.com",
         userType: "student" as const,
       },
@@ -103,7 +103,7 @@ export default function RegisterPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center space-x-2">
             <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-xl">SH</span>
+              <span className="text-white font-bold text-xl"><img className="h-12 w-16 m-0 p-0" src="./placeholder-logo.svg" alt="" /></span>
             </div>
             <span className="text-2xl font-bold text-gray-900">GharDera</span>
           </Link>
@@ -153,7 +153,7 @@ export default function RegisterPage() {
                 >
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="student" id="student" />
-                    <Label htmlFor="student">Student looking for accommodation</Label>
+                    <Label htmlFor="student">Tenant looking for accommodation</Label>
                   </div>
                   <div className="flex items-center space-x-2">
                     <RadioGroupItem value="landlord" id="landlord" />
@@ -232,7 +232,7 @@ export default function RegisterPage() {
 
               <div className="grid grid-cols-2 gap-3">
                 <Button type="button" variant="outline" onClick={() => fillDemoData("student")} disabled={loading}>
-                  Fill Student Data
+                  Fill Tenant Data
                 </Button>
                 <Button type="button" variant="outline" onClick={() => fillDemoData("landlord")} disabled={loading}>
                   Fill Landlord Data

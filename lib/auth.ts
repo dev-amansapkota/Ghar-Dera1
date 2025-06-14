@@ -17,7 +17,7 @@ export interface User {
 const MOCK_USERS: User[] = [
   {
     $id: "demo-student-1",
-    name: "Demo Student",
+    name: "Demo Tenant",
     email: "student@demo.com",
     userType: "student",
     verified: true,

@@ -10,9 +10,9 @@ export const MOCK_PROPERTIES = [
     roomType: "single",
     amenities: ["WiFi", "Attached Bath", "24/7 Water", "Study Table", "Wardrobe"],
     images: [
-      "/placeholder.svg?height=300&width=400&text=Room+View",
-      "/placeholder.svg?height=300&width=400&text=Bathroom",
-      "/placeholder.svg?height=300&width=400&text=Study+Area",
+      "/single-room.svg?height=300&width=400&text=Room+View",
+      "/single-room.svg?height=300&width=400&text=Bathroom",
+      "/single-room.png?height=300&width=400&text=Study+Area",
     ],
     landlordId: "landlord1",
     available: true,

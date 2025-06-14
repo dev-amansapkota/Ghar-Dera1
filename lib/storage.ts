@@ -23,7 +23,7 @@ export const storageService = {
           mimeType: file.type,
           sizeOriginal: file.size,
           // Use a placeholder image URL
-          url: `/placeholder.svg?height=400&width=600&text=${encodeURIComponent(file.name)}`,
+          url: `{MOCK_PROPERTIES.image}height=400&width=600&text=${encodeURIComponent(file.name)}`,
         }
       }
       throw error
@@ -75,14 +75,14 @@ export const storageService = {
   getFileView(bucketId: string, fileId: string) {
     // Check if it's a mock URL (placeholder)
     if (fileId.startsWith("mock-")) {
-      return `/placeholder.svg?height=400&width=600`
+      return `{MOCK_PROPERTIES.image}height=400&width=600`
     }
 
     try {
       return storage.getFileView(bucketId, fileId)
     } catch (error) {
       console.warn("Error getting file view, using placeholder:", error)
-      return `/placeholder.svg?height=400&width=600`
+      return `{MOCK_PROPERTIES.image}height=400&width=600`
     }
   },
 

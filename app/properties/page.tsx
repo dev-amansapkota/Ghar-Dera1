@@ -192,8 +192,8 @@ export default function PropertiesPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SH</span>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm"><img className="h-12 w-16 m-0 p-0" src="./placeholder-logo.svg" alt="" /></span>
               </div>
               <span className="text-xl font-bold text-gray-900">GharDera</span>
             </Link>
@@ -399,7 +399,7 @@ export default function PropertiesPage() {
                     <div className="flex">
                       <div className="w-64 h-48 flex-shrink-0">
                         <img
-                          src={property.images[0] || "/placeholder.svg?height=200&width=300"}
+                          src={property.images[0] || "{MOCK_PROPERTIES.image}height=200&width=300"}
                           alt={property.title}
                           className="w-full h-full object-cover"
                         />
