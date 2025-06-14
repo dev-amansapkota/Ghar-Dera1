@@ -18,7 +18,7 @@ export default function ListingsPage() {
     {
       id: 1,
       title: "Spacious Single Room in Baneshwor",
-      price: 8000,
+      price: "Negotiable",
       location: "Baneshwor, Kathmandu",
       rating: 4.8,
       reviews: 24,
@@ -189,8 +189,8 @@ export default function ListingsPage() {
                     className="w-full"
                   />
                   <div className="flex justify-between text-sm text-gray-600">
-                    <span>Rs. {priceRange[0]}</span>
-                    <span>Rs. {priceRange[1]}</span>
+                    <span> {priceRange[0]}</span>
+                    <span> {priceRange[1]}</span>
                   </div>
                 </div>
               </div>
@@ -286,7 +286,7 @@ export default function ListingsPage() {
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-2xl font-bold text-blue-600">
                     Rs. {listing.price.toLocaleString()}
-                    <span className="text-sm text-gray-500">/month</span>
+                    <span className="text-sm text-gray-500"></span>
                   </span>
                   <Badge variant="outline">{listing.type}</Badge>
                 </div>

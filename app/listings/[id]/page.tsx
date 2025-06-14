@@ -16,7 +16,7 @@ export default function ListingDetailPage() {
   const listing = {
     id: 1,
     title: "Spacious Single Room in Baneshwor",
-    price: 8000,
+    price: "Negotiable",
     location: "Baneshwor, Kathmandu",
     rating: 4.8,
     reviews: 24,
@@ -162,7 +162,7 @@ export default function ListingDetailPage() {
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-3xl font-bold text-blue-600">Rs. {listing.price.toLocaleString()}</div>
+                    <div className="text-3xl font-bold text-blue-600"> {listing.price.toLocaleString()}</div>
                     <div className="text-gray-500">per month</div>
                   </div>
                 </div>

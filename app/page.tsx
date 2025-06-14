@@ -117,7 +117,7 @@ export default function Home() {
                   <div className="text-gray-600 font-medium">Happy Students</div>
                 </div>
                 <div className="text-center p-6 bg-white/50 rounded-xl backdrop-blur-sm">
-                  <div className="text-4xl font-bold text-purple-600 mb-2">0%</div>
+                  <div className="text-4xl font-bold text-purple-600 mb-2">2.5%</div>
                   <div className="text-gray-600 font-medium">Broker Fees</div>
                 </div>
                 <div className="text-center p-6 bg-white/50 rounded-xl backdrop-blur-sm">
@@ -186,7 +186,7 @@ export default function Home() {
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
                     Connect directly with verified landlords. Save thousands of rupees that you would otherwise pay to
-                    brokers. Our platform is completely free for students.
+                    brokers. Our platform is completely free for landlords.
                   </p>
                 </CardContent>
               </Card>
@@ -200,8 +200,8 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
-                    Find rooms near major colleges and universities. Easy access to public transport, markets,
-                    hospitals, and all essential amenities you need as a student.
+                    Find rooms near your destinations. Easy access to public transport, markets,
+                    hospitals, and all essential amenities you need as a Tenant.
                   </p>
                 </CardContent>
               </Card>
@@ -215,7 +215,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
-                    Connect with fellow students, share experiences, get recommendations from verified reviews, and
+                    Connect with fellow , share experiences, get recommendations from verified reviews, and
                     build lasting friendships in your new city.
                   </p>
                 </CardContent>
@@ -230,7 +230,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
-                    Our AI-powered recommendation system matches you with properties based on your preferences, budget,
+                    Our  system matches you with the properties based on your preferences, budget,
                     and college location for the perfect fit.
                   </p>
                 </CardContent>
@@ -245,8 +245,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
-                    Book your room instantly with our secure payment system. Digital agreements, online payments, and
-                    immediate confirmation - all in one place.
+                    Secure your room immediately and effortlessly get in touch with landlords. 
                   </p>
                 </CardContent>
               </Card>

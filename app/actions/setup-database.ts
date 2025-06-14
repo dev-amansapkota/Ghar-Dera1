@@ -133,7 +133,7 @@ async function createCollections(databases: any, Permission: any, Role: any, ID:
       const attributes = [
         { name: "title", type: "string", size: 255, required: true },
         { name: "description", type: "string", size: 5000, required: true },
-        { name: "price", type: "integer", required: true },
+        { name: "price", type: "string", required: true },
         { name: "location", type: "string", size: 255, required: true },
         { name: "address", type: "string", size: 500, required: true },
         { name: "roomType", type: "string", size: 50, required: true },

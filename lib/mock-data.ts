@@ -4,7 +4,7 @@ export const MOCK_PROPERTIES = [
     title: "Cozy Single Room in Baneshwor",
     description:
       "Perfect for students with all basic amenities. Located in a safe neighborhood with easy access to public transportation. The room comes with a study table, wardrobe, and attached bathroom. WiFi is included in the rent.",
-    price: 8000,
+    price: 'Negotiable',
     location: "Baneshwor, Kathmandu",
     address: "Baneshwor-10, Kathmandu",
     roomType: "single",
@@ -12,7 +12,7 @@ export const MOCK_PROPERTIES = [
     images: [
       "/single-room.svg?height=300&width=400&text=Room+View",
       "/single-room.svg?height=300&width=400&text=Bathroom",
-      "/single-room.png?height=300&width=400&text=Study+Area",
+      "/single-room.png?height=300&width=400&text=Study+Area", 
     ],
     landlordId: "landlord1",
     available: true,
@@ -64,7 +64,7 @@ export const MOCK_PROPERTIES = [
     title: "Modern Apartment in New Baneshwor",
     description:
       "Fully furnished modern apartment with all amenities. Perfect for students who want comfort and convenience. Includes kitchen, balcony, and parking space. Located in a prime area with easy access to colleges.",
-    price: 12000,
+    price: 'Negotiable',
     location: "New Baneshwor, Kathmandu",
     address: "New Baneshwor-15, Kathmandu",
     roomType: "apartment",

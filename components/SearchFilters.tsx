@@ -122,8 +122,8 @@ export function SearchFilters({ onFiltersChange, initialFilters = {} }: SearchFi
                   className="w-full"
                 />
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>Rs. {filters.priceRange[0].toLocaleString()}</span>
-                  <span>Rs. {filters.priceRange[1].toLocaleString()}</span>
+                  <span> {filters.priceRange[0].toLocaleString()}</span>
+                  <span>{filters.priceRange[1].toLocaleString()}</span>
                 </div>
               </div>
             </div>

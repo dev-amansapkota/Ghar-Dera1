@@ -253,7 +253,7 @@ export function AdvancedSearch({
 
                 <TabsContent value="price">
                   <div>
-                    <label className="text-sm font-medium mb-1 block">Price Range (Rs.)</label>
+                    <label className="text-sm font-medium mb-1 block">Price Range </label>
                     <div className="space-y-4 px-2">
                       <Slider
                         value={filters.priceRange}
@@ -264,8 +264,8 @@ export function AdvancedSearch({
                         className="w-full"
                       />
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>Rs. {filters.priceRange[0].toLocaleString()}</span>
-                        <span>Rs. {filters.priceRange[1].toLocaleString()}</span>
+                        <span>{filters.priceRange[0].toLocaleString()}</span>
+                        <span>{filters.priceRange[1].toLocaleString()}</span>
                       </div>
                     </div>
                   </div>
@@ -329,7 +329,7 @@ export function AdvancedSearch({
             )}
             {activeFilters.includes("price") && (
               <Badge variant="secondary" className="flex gap-1 items-center">
-                Rs. {filters.priceRange[0].toLocaleString()} - Rs. {filters.priceRange[1].toLocaleString()}
+                 {filters.priceRange[0].toLocaleString()} - {filters.priceRange[1].toLocaleString()}
                 <X className="w-3 h-3 cursor-pointer" onClick={() => handleFilterChange("priceRange", [3000, 25000])} />
               </Badge>
             )}
@@ -429,8 +429,8 @@ export function AdvancedSearch({
                   className="w-full"
                 />
                 <div className="flex justify-between text-sm text-gray-600">
-                  <span>Rs. {filters.priceRange[0].toLocaleString()}</span>
-                  <span>Rs. {filters.priceRange[1].toLocaleString()}</span>
+                  <span>{filters.priceRange[0].toLocaleString()}</span>
+                  <span>{filters.priceRange[1].toLocaleString()}</span>
                 </div>
               </div>
             </div>
@@ -470,7 +470,7 @@ export function AdvancedSearch({
                     {filter === "location" && filters.location}
                     {filter === "roomType" && roomTypes.find((t) => t.value === filters.roomType)?.label}
                     {filter === "price" &&
-                      `Rs. ${filters.priceRange[0].toLocaleString()} - Rs. ${filters.priceRange[1].toLocaleString()}`}
+                      ` ${filters.priceRange[0].toLocaleString()} - Rs. ${filters.priceRange[1].toLocaleString()}`}
                     {filter === "amenities" && `${filters.amenities.length} Amenities`}
                   </Badge>
                 ))}

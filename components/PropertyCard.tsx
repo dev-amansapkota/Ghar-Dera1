@@ -139,8 +139,8 @@ export function PropertyCard({ property, onFavoriteToggle, isFavorite = false, f
 
           <div className="flex items-center justify-between">
             <div>
-              <span className="text-2xl font-bold text-blue-600">Rs. {property.price.toLocaleString()}</span>
-              <span className="text-sm text-gray-500">/month</span>
+              <span className="text-2xl font-bold text-blue-600">{property.price.toLocaleString()}</span>
+              <span className="text-sm text-gray-500"></span>
             </div>
             <Button size="sm" className="shrink-0 group-hover:bg-blue-700 transition-colors">
               View Details

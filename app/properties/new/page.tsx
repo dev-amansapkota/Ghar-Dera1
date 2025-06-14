@@ -273,7 +273,7 @@ export default function NewPropertyPage() {
                   </div>
 
                   <div>
-                    <Label htmlFor="price">Monthly Rent (Rs.) *</Label>
+                    <Label htmlFor="price">Monthly Rent *</Label>
                     <Input
                       id="price"
                       type="number"

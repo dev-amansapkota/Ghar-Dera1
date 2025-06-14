@@ -124,8 +124,8 @@ export default function DashboardPage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Sn</span>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm"><img className="h-12 w-16 m-0 p-0" src="./placeholder-logo.svg" alt="" /></span>
               </div>
               <span className="text-xl font-bold text-gray-900">GharDera</span>
             </Link>
@@ -500,7 +500,7 @@ export default function DashboardPage() {
                 <Card>
                   <CardHeader>
                     <CardTitle>Messages</CardTitle>
-                    <CardDescription>Communicate with landlords and students</CardDescription>
+                    <CardDescription>Communicate with Landlords and Tenants. </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <MessagingSystem />

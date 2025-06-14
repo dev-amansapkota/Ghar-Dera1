@@ -294,8 +294,8 @@ export default function PropertiesPage() {
                         className="w-full"
                       />
                       <div className="flex justify-between text-sm text-gray-600">
-                        <span>Rs. {filters.priceRange[0].toLocaleString()}</span>
-                        <span>Rs. {filters.priceRange[1].toLocaleString()}</span>
+                        <span>{filters.priceRange[0].toLocaleString()}</span>
+                        <span>{filters.priceRange[1].toLocaleString()}</span>
                       </div>
                     </div>
                   </div>
@@ -409,7 +409,7 @@ export default function PropertiesPage() {
                           <h3 className="text-xl font-semibold">{property.title}</h3>
                           <div className="text-right">
                             <div className="text-2xl font-bold text-blue-600">
-                              Rs. {property.price.toLocaleString()}
+                              {property.price.toLocaleString()}
                             </div>
                             <div className="text-sm text-gray-500">per month</div>
                           </div>

@@ -518,8 +518,8 @@ export default function PropertyDetailPage() {
                       <div className="flex items-center justify-between mb-4">
                         <h3 className="text-xl font-semibold">About this property</h3>
                         <div className="text-2xl font-bold text-blue-600">
-                          Rs. {property.price.toLocaleString()}
-                          <span className="text-sm text-gray-500">/month</span>
+                          {property.price.toLocaleString()}
+                          <span className="text-sm text-gray-500"></span>
                         </div>
                       </div>
 
@@ -713,7 +713,7 @@ export default function PropertyDetailPage() {
                             <div className="flex items-center justify-between mt-1">
                               <span className="text-sm text-gray-600">{similarProperty.location}</span>
                               <span className="font-bold text-blue-600">
-                                Rs. {similarProperty.price.toLocaleString()}
+                                {similarProperty.price.toLocaleString()}
                               </span>
                             </div>
                           </div>
@@ -739,7 +739,7 @@ export default function PropertyDetailPage() {
                 <div className="flex items-center justify-between">
                   <div>
                     <CardTitle className="text-3xl font-bold text-blue-600">
-                      Rs. {property.price.toLocaleString()}
+                      {property.price.toLocaleString()}
                     </CardTitle>
                     <CardDescription>per month</CardDescription>
                   </div>
