@@ -12,7 +12,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { useAuth } from "@/contexts/AuthContext"
 import { LoadingSpinner } from "@/components/ui/loading-spinner"
 import { useToast } from "@/hooks/use-toast"
-import { DemoModeBanner } from "@/components/DemoModeBanner"
+// import { DemoModeBanner } from "@/components/DemoModeBanner"
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
@@ -71,7 +71,7 @@ export default function LoginPage() {
           </Link>
         </div>
 
-        <DemoModeBanner />
+        {/* <DemoModeBanner /> */}
 
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center pb-6">

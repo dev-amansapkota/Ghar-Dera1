@@ -242,7 +242,7 @@ const AboutUs = () => {
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-3" />
-                  <span>help@studenthousingnepal.com</span>
+                  <span>help@ghardera.com</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-3" />

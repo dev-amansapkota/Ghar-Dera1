@@ -13,7 +13,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useAuth } from "@/contexts/AuthContext"
 import { LoadingSpinner } from "@/components/ui/loading-spinner"
 import { useToast } from "@/hooks/use-toast"
-import { DemoModeBanner } from "@/components/DemoModeBanner"
+// import { DemoModeBanner } from "@/components/DemoModeBanner"
 
 export default function RegisterPage() {
   const [formData, setFormData] = useState({
@@ -109,7 +109,7 @@ export default function RegisterPage() {
           </Link>
         </div>
 
-        <DemoModeBanner />
+        {/* <DemoModeBanner /> */}
 
         <Card className="shadow-xl border-0">
           <CardHeader className="text-center pb-6">

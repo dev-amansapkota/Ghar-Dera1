@@ -11,8 +11,8 @@ import { databaseService, type Property } from "@/lib/database"
 import { useAuth } from "@/contexts/AuthContext"
 import Link from "next/link"
 import { Header } from "@/components/Header"
-import { DatabaseSetupBanner } from "@/components/DatabaseSetupBanner"
-import { DemoModeBanner } from "@/components/DemoModeBanner"
+// import { DatabaseSetupBanner } from "@/components/DatabaseSetupBanner"
+// import { DemoModeBanner } from "@/components/DemoModeBanner"
 import ChatBot from "@/components/ui/chatbot"
 export default function Home() {
   const { user } = useAuth()
@@ -49,8 +49,8 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <ChatBot/>
-      <DatabaseSetupBanner />
-      <DemoModeBanner />
+      {/* <DatabaseSetupBanner /> */}
+      {/* <DemoModeBanner /> */}
       <Header />
       <main className="flex-1">
         {/* Hero Section */}
@@ -182,7 +182,7 @@ export default function Home() {
                   <div className="w-20 h-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Shield className="w-10 h-10 text-white" />
                   </div>
-                  <CardTitle className="text-xl mb-4">Zero Broker Fees</CardTitle>
+                  <CardTitle className="text-xl mb-4">Low Broker Fees</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
@@ -212,7 +212,7 @@ export default function Home() {
                   <div className="w-20 h-20 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Users className="w-10 h-10 text-white" />
                   </div>
-                  <CardTitle className="text-xl mb-4">Student Community</CardTitle>
+                  <CardTitle className="text-xl mb-4"> Community</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 leading-relaxed">
@@ -402,8 +402,7 @@ export default function Home() {
                 </li>
                 <li>
                   <Link href="/support" className="hover:text-white transition-colors">
-                    Student Support
-                  </Link>
+                    Privacy Policy</Link>
                 </li>
               </ul>
             </div>
@@ -448,7 +447,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-3" />
-                  <span>help@studenthousingnepal.com</span>
+                  <span>help@ghardera.com</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-4 h-4 mr-3" />

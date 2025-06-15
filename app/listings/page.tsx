@@ -32,7 +32,7 @@ export default function ListingsPage() {
     {
       id: 2,
       title: "Affordable Shared Room Near TU",
-      price: 5500,
+      price: "Negotiable",
       location: "Kirtipur, Kathmandu",
       rating: 4.6,
       reviews: 18,
@@ -46,7 +46,7 @@ export default function ListingsPage() {
     {
       id: 3,
       title: "Modern Apartment in New Baneshwor",
-      price: 12000,
+      price: "Negotiable",
       location: "New Baneshwor, Kathmandu",
       rating: 4.9,
       reviews: 31,
@@ -60,7 +60,7 @@ export default function ListingsPage() {
     {
       id: 4,
       title: "Budget Room in Koteshwor",
-      price: 6500,
+      price: "Negotiable",
       location: "Koteshwor, Kathmandu",
       rating: 4.4,
       reviews: 12,
@@ -74,7 +74,7 @@ export default function ListingsPage() {
     {
       id: 5,
       title: "Hostel Style Accommodation",
-      price: 4500,
+      price: "Negotiable",
       location: "Pulchowk, Lalitpur",
       rating: 4.2,
       reviews: 45,
@@ -88,7 +88,7 @@ export default function ListingsPage() {
     {
       id: 6,
       title: "Premium Room with AC",
-      price: 15000,
+      price: "Negotiable",
       location: "Dillibazar, Kathmandu",
       rating: 4.7,
       reviews: 19,
