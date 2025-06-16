@@ -1,30 +1,41 @@
-# Nepal student accommodation
+🇳🇵 Nepal Student Accommodation - Ghardera 🏠
+Ghardera is a dedicated platform designed to help students in Nepal find safe, affordable, and convenient accommodations near their colleges and universities. Whether you're moving to a new city for studies or looking for better housing options, Ghardera connects students with trusted landlords and verified listings.
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+🌟 Key Features
+🔍 Search Accommodations by location, college, or price range
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/gobro6002-5111s-projects/v0-nepal-student-accommodation)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/hiTJPqtzSeT)
+🏠 Verified Listings with photos, amenities, and rent details
 
-## Overview
+📍 Map Integration to view nearby hostels and rentals
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+🧑‍🎓 Student-Focused Filters – Boys/Girls hostels, sharing options, distance from campus
 
-## Deployment
+📞 Direct Contact with property owners
 
-Your project is live at:
+📝 User Reviews to ensure quality and safety
 
-**[https://vercel.com/gobro6002-5111s-projects/v0-nepal-student-accommodation](https://vercel.com/gobro6002-5111s-projects/v0-nepal-student-accommodation)**
+🚀 Why Ghardera?
+Many students in Nepal struggle to find reliable and student-friendly accommodation. Ghardera solves this by providing a centralized, student-focused platform built with local needs in mind.
 
-## Build your app
+👨‍💻 Built With
+Frontend: React / Next.js
 
-Continue building your app on:
+Backend: AppWrite
 
-**[https://v0.dev/chat/projects/hiTJPqtzSeT](https://v0.dev/chat/projects/hiTJPqtzSeT)**
+Authentication: AppWrite
 
-## How It Works
+Maps: Google Maps API
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Hosting: Vercel 
+
+📌 Future Plans
+Mobile App (Flutter)
+
+Online Rent Payments
+
+College-based forums & community support
+
+Roommate matching system
+
+🤝 Contributing
+We welcome contributions from developers, designers, and students. Help us improve the housing experience for students across Nepal.
